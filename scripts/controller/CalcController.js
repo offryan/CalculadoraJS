@@ -10,7 +10,6 @@ class CalcController {
         this._currentDate;
         this.initialize();
         this.initButtonsEvents();
-
     }
 
     initialize(){
@@ -22,7 +21,6 @@ class CalcController {
             this.setDisplayDateTime();
 
         }, 1000);
-
     }
 
     addEventListenerAll(element, events, fn){
@@ -32,7 +30,6 @@ class CalcController {
             element.addEventListener(event, fn, false);
 
         })
-    
     }
 
     clearAll(){
@@ -105,7 +102,6 @@ class CalcController {
                 this.setError();
                break;
         }
-
     }
 
     initButtonsEvents(){
@@ -127,9 +123,7 @@ class CalcController {
                 btn.style.cursor = "pointer";
 
             });
-
         });
-
     }
 
     setDisplayDateTime(){
@@ -191,5 +185,4 @@ class CalcController {
         this._currentDate = value;
 
     }
-
 }
